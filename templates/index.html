@@ -8,18 +8,15 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <!-- Branding -->
   <div class="brand-container">
     <div class="gif-circle">
       <img src="{{ url_for('static', filename='giphy.gif') }}" alt="Jarvis">
     </div>
-    <span class="brand-name">J A R V I S</span>
+    <span class="brand-name">P R I N I X</span>
   </div>
 
-  <!-- Chat Area -->
   <div class="chat-area" id="chatArea"></div>
 
-  <!-- Bottom Input -->
   <div class="bottom-input">
     <div class="search-wrapper">
       <input type="text" id="userInput" placeholder="Ask anything..." autofocus />
@@ -31,7 +28,6 @@
     </div>
   </div>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>

@@ -1,2 +1,5 @@
 flask
+werkzeug
 google-generativeai
+pyttsx3
+yt-dlp
