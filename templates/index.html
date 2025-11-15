@@ -3,32 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JARVIS - AI Assistant</title>
+  <title>PRINIX - AI Assistant</title>
+
+  <!-- Favicon -->
   <link rel="shortcut icon" href="{{ url_for('static', filename='avatar.png') }}" type="image/x-icon">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
+
+  <!-- Logo / GIF -->
   <div class="brand-container">
     <div class="gif-circle">
-      <img src="{{ url_for('static', filename='giphy.gif') }}" alt="Jarvis">
+      <img src="{{ url_for('static', filename='giphy.gif') }}" alt="PRINIX">
     </div>
     <span class="brand-name">P R I N I X</span>
   </div>
 
+  <!-- Chat Area -->
   <div class="chat-area" id="chatArea"></div>
 
+  <!-- User Input -->
   <div class="bottom-input">
     <div class="search-wrapper">
       <input type="text" id="userInput" placeholder="Ask anything..." autofocus />
+
       <div class="icon-group">
         <button id="micBtn" title="Voice Input 🎤">🎤</button>
         <div class="send-btn" id="sendBtn" title="Send">➤</div>
         <button id="locationBtn" class="location-btn" title="Share Location">📍</button>
       </div>
+
     </div>
   </div>
 
+  <!-- Markdown Renderer -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- Your App JS -->
   <script src="{{ url_for('static', filename='app.js') }}"></script>
+
 </body>
 </html>
